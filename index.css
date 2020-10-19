@@ -1,0 +1,670 @@
+@font-face {
+    font-family: Lora;
+    src: url(Fonts/Lora/Lora-VariableFont_wght.ttf);
+    font-weight: normal;
+  }
+
+@font-face {
+    font-family: OpenSans;
+    src: url(Fonts/Open_Sans/OpenSans-Regular.ttf);
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: Montserrant;
+    src: url(Fonts/Montserrat/Montserrat-Regular.ttf);
+    font-weight: normal;
+}
+
+/*navbar*/
+.topnav {
+    overflow: hidden;
+    margin: 8vh 5vw 5vh 5vw;
+    width: 85vw;
+    align-items: center;
+}
+
+.topnav h1{
+    font-family: Lora;
+    color: #925757;
+    
+}
+
+.topnav img{
+    max-width: 80px;
+    max-height: 80px;
+}
+
+.topnav a{
+    font-family: Montserrant;
+    font-variant: small-caps;
+    font-weight: normal;
+    padding: 1vw;
+    padding-top: 0vw;
+    color: #925757;
+}
+
+.normlinks{
+    padding-top: 2vh;
+}
+
+.topnav nav{
+    float: right;
+    display: flex;
+    flex-wrap: wrap;
+    float: right;
+    align-content: space-between;
+    padding-top: 2vh;
+}
+
+.logo {
+    float: left;
+    display: flex;
+    flex-direction: row;
+}
+
+.dropdown {
+    position: relative;
+    display: none;
+    float: right;
+  }
+
+
+.dropdown-content{
+    display: none;
+    min-width: 160px;
+    z-index: 1000;
+    position: relative;
+    overflow: auto;
+}
+
+.dropdown-content a {
+    color: #925757;
+    padding: 12px 16px;
+    background-color: white;
+    text-decoration: none;
+    display: block;
+    text-align: end;
+  }
+
+.dropdown-content a:hover {background-color: #FFECEC;}
+
+.show {
+    display:block;
+}
+
+/* main body */
+
+.main {
+    width: 100vw;
+    top: 25vh;
+    background-color: transparent;
+    position: absolute;
+}
+
+.content{
+    height: 750px;
+    background-color: transparent;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    width: 102vw;
+    margin-left: -1%;
+}
+
+.textCont{
+    display: block;
+    padding-left: 8vw;
+    position: relative;
+    width: 40vw;
+    padding-top: 10vh;
+}
+
+.textCont h1{
+        font-family: Lora;
+        color: #000000;
+        font-size: 45px;
+        max-width: 40vw;
+        padding-bottom: -5vh;
+        margin-bottom: 1%;
+}
+
+.textCont h3{
+
+font-family: Open Sans;
+font-style: normal;
+font-weight: 300;
+font-size: 24px;
+line-height: 4.5vh;
+
+color: #000000;
+margin-top: 0%; margin-bottom: 1%;
+
+}
+
+h4{
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+
+    color: #000000;
+    margin-top: 0%;
+    margin-bottom: 1%;
+}
+
+.textCont.second{
+    top:12vh;
+    padding-left: 10vw;
+}
+
+
+.pinkbtn{
+    width: 180px;
+    height: 50px;
+
+    background-color: #FC7C7B;
+    border: 1px solid #FC7C7B;
+    color: #FFFFFF;
+    
+    font-family: Montserrant;
+    font-style: normal;
+    font-size: 18px;
+    font-variant: small-caps;
+    margin-top: 3%;
+    outline:0;
+    
+}
+
+.pinkbtn:hover {
+    background-color:#FFFFFF;
+    border: 1px solid #FC7C7B;
+    color: #FC7C7B;
+    outline:0;
+}
+
+.pinkbtn:active {
+    background-color:#FFECEC;
+    border: 1px solid #FC7C7B;
+    color: #FC7C7B;
+    outline:0;
+}
+
+.whitebtn{
+    width: 180px;
+    height: 50px;
+
+    background-color: #FFFFFF;
+    border: 1px solid #925757;
+    color: #925757;
+    
+    font-family: Montserrant;
+    font-style: normal;
+    font-size: 18px;
+    font-variant: small-caps;
+    margin-top: 3%;
+    outline:0;  
+}
+
+.whitebtn:hover {
+    background-color:#FFFFFF;
+    border: 1px solid #FC7C7B;
+    color: #FC7C7B;
+    outline:0;
+}
+
+.whitebtn:active {
+    background-color:#FFECEC;
+    border: 1px solid #925757;
+    color: #925757;
+    outline:0;
+}
+
+.imgContR {
+    position: relative;
+    left:35vw;
+    margin-left: 15vw;
+}
+
+.imgContL{
+    position: relative;
+    left:40vw;
+    margin-left: 15vw;
+}
+
+.logoimg{
+    width:24vw;
+    position: absolute;
+    top: 38vh;
+    right: 30vw;
+
+}
+
+.lightpinkrect{
+    width: 30vw;
+    height: 36vw;
+    background: #FFC5AC;
+    position: absolute;
+    top: 8vh;
+    right: 10vw;
+    border: #FFC5AC;
+}
+
+.pinkrect{
+    width: 30vw;
+    height: 32vw;
+    background-color: #FC7C7B;
+    position: absolute;
+    top: 22vh;
+    right: 12vw;
+}
+
+.simpleimg1{
+    width: 30vw;
+    position: absolute;
+    top: 2vh;
+    right: 14vw;
+}
+
+.simpleimg2{
+    width: 30vw;
+    height: 32vw;
+    position: absolute;
+    top: 15vh;
+    right: 16vw;
+}
+
+.colorsquare1{
+    width: 15vw;
+    height: 15vw;
+    position: absolute;
+    top: 55vh;
+    right: 35vw;
+    background-color: #FC7C7B;
+}
+
+.imgsquare1{
+    width: 15vw;
+    height: 15vw;
+    position: absolute;
+    top: 51vh;
+    right: 37vw;
+}
+
+.imgsquare2{
+    width: 15vw;
+    height: 15vw;
+    position: absolute;
+    top: -5vh;
+    right: 5vw;
+}
+
+.colorsquare2{
+    width: 15vw;
+    height: 15vw;
+    position: absolute;
+    top: -1vh;
+    right: 2vw;
+    background-color: #FC7C7B;
+}
+
+footer{
+    height: 5vh;
+    background: #FFC5AC;
+    position: absolute;
+    bottom: 0vh;
+
+}
+@media screen and (max-width: 1080px) {
+    .content{
+        height: 680px;
+    }
+}
+
+
+@media screen and (max-width: 950px) {
+
+    .topnav{
+        margin-top: 2vh;
+    }
+    .normlinks{
+      display: none;
+    }
+    .dropdown{
+        display: flex;
+        align-items: flex-end;
+        flex-direction: column;
+        z-index: 1;
+    }
+    .dropdown a.icon {
+      float: right;
+      display: block;
+      font-size: 25px;
+    }
+
+    .main {
+        width: 100vw;
+        top: 15vh;
+        background-color: transparent;
+        position: absolute;
+    }
+    .content{
+        height: 500px;
+    }
+
+    .textCont h1{
+        font-size: 30px;
+    }
+
+    .textCont h3{
+        font-size: 16px;
+        line-height: 3vh;
+        width: 34vw;
+
+    }
+
+    h4{
+        font-size: 12px;
+
+    }
+
+    .textCont{
+        padding-top: 6%;
+    }
+
+    .simpleimg1{
+        width: 35vw;
+        top: 2vh;
+    }
+
+
+    .simpleimg2{
+        width: 35vw;
+        height: 38vw;
+        top: 10vh;
+        right: 12vw;
+    }
+
+    .pinkrect{
+        width: 35vw;
+        height: 38vw;
+        top: 14vh;
+        right: 8vw;
+    }
+
+    .lightpinkrect{
+        width: 35vw;
+        height: 40vw;
+        top: 7vh;
+    }
+
+    .logoimg{
+        width: 30vw;
+        top: 24vh;
+    }
+
+    .pinkbtn{
+        width: 160px;
+        height: 45px;
+        font-size: 16px;
+    }
+
+    .whitebtn{
+        width: 160px;
+        height: 45px;
+        font-size: 16px;
+    }
+
+    .colorsquare1{
+        width: 14vw;
+        height: 14vw;
+        top: 40vh;
+        right: 38vw;
+    }
+    
+    .imgsquare1{
+        width: 14vw;
+        height: 14vw;
+        top: 38vh;
+        right: 40vw;
+    }
+    
+    .imgsquare2{
+        width: 14vw;
+        height: 14vw;
+        top: -3vh;
+        right: 3vw;
+    }
+    
+    .colorsquare2{
+        width: 14vw;
+        height: 14vw;
+        position: absolute;
+        top: -1vh;
+        right: 1vw;
+        background-color: #FC7C7B;
+    }
+  }
+
+@media screen and (max-width: 600px) {
+    .topnav h1{
+        font-size: 25px;
+        padding-top: -10px;
+    }
+    .topnav img{
+        max-width: 60px;
+        max-height: 60px;
+    }
+
+    .textCont h1{
+        font-size: 22px;
+    }
+
+    .textCont h3{
+        font-size: 14px;
+    }
+
+    .textCont h4{
+        font-size: 12px;
+    }
+
+    .content{
+        height: 430px;
+    }
+
+    .pinkbtn{
+        width: 110px;
+        height: 28px;
+        font-size: 12px;
+    }
+
+    .whitebtn{
+        width: 110px;
+        height: 28px;
+        font-size: 12px;
+    }
+
+
+    .simpleimg1{
+        width: 32vw;
+        top: 2vh;
+    }
+
+
+    .simpleimg2{
+        width: 32vw;
+        height: 35vw;
+        top: 10vh;
+        right: 12vw;
+    }
+
+    .pinkrect{
+        width: 32vw;
+        height: 35vw;
+        top: 14vh;
+        right: 8vw;
+    }
+
+    .lightpinkrect{
+        width: 32vw;
+        height: 35vw;
+        top: 7vh;
+    }
+    .colorsquare1{
+        width: 12vw;
+        height: 12vw;
+        top: 32vh;
+        right: 37vw;
+    }
+    
+    .imgsquare1{
+        width: 12vw;
+        height: 12vw;
+        top: 30vh;
+        right: 38vw;
+    }
+    
+    .imgsquare2{
+        width: 12vw;
+        height: 12vw;
+        top: -2vh;
+        right: 4vw;
+    }
+    
+    .colorsquare2{
+        width: 12vw;
+        height: 12vw;
+        position: absolute;
+        top: 0vh;
+        right: 2vw;
+        background-color: #FC7C7B;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .topnav h1{
+        display:none
+    }
+    .topnav img{
+        max-width: 80px;
+        max-height: 80px;
+        margin-top: -1vh;
+    }
+    .holiday{
+        display: none;
+    }
+    .textCont h1{
+        font-size: 16px;
+        padding-bottom: 1vh;
+    }
+
+
+    .textCont h3{
+        font-size: 11px;
+        line-height: 2vh;
+    }
+
+    .textCont h4{
+        font-size: 10px;
+    }
+    .pinkbtn{
+        width: 90px;
+        height: 24px;
+        font-size: 10px;
+    }
+
+    .whitebtn{
+        width: 90px;
+        height: 24px;
+        font-size: 10px;
+    }
+
+
+    .content{
+        height: 300px;
+        margin-left:-2vw;
+        width:104vw;
+        padding-left:1vw;
+    }
+
+    .simpleimg1{
+        width: 40vw;
+        top: 2vh;
+        right: 5vw;
+    }
+
+
+    .simpleimg2{
+        width: 40vw;
+        height: 42vw;
+        top: 10vh;
+        right: 10vw;
+    }
+
+    .pinkrect{
+        width: 40vw;
+        height: 42vw;
+        top: 13vh;
+        right: 6vw;
+    }
+
+    .lightpinkrect{
+        width: 40vw;
+        height: 45vw;
+        top: 7vh;
+        right: 1vw;
+    }
+    .colorsquare1{
+        width: 20vw;
+        height: 20vw;
+        top: 24vh;
+        right: 32vw;
+    }
+    
+    .imgsquare1{
+        width: 20vw;
+        height: 20vw;
+        top: 22vh;
+        right: 35vw;
+    }
+    
+    .imgsquare2{
+        width: 20vw;
+        height: 20vw;
+        top: -4vh;
+        right: -1vw;
+    }
+    
+    .colorsquare2{
+        width: 20vw;
+        height: 20vw;
+        position: absolute;
+        top: -2vh;
+        right: -3vw;
+        background-color: #FC7C7B;
+    }
+
+    .textCont.second{
+        top:4vh;
+    }
+
+    .textCont.third h1{
+        padding : 0vh;
+        top: 2vh;
+    }
+    .textCont.third{
+        top: 2vh;
+    }
+
+
+    .logoimg{
+        width: 40vw;
+        top: 16vh;
+    }
+
+    footer{
+        height: 20vh;
+    }
+
+
+}

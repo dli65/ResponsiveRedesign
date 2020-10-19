@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href="index.css" rel="stylesheet" />
+        <title>Cakes of Paradise</title>
+        <meta content="width=device-width, initial-scale=1" name="viewport" />
+        <script>
+            function dropDown() {
+                document.getElementById("myDropdown").classList.toggle("show");
+            }
+
+            window.onclick = function(event) {
+                if (!event.target.matches('.icon')) {
+                    var dropdowns = document.getElementsByClassName("dropdown-content");
+                    var i;
+                    for (i = 0; i < dropdowns.length; i++) {
+                        var openDropdown = dropdowns[i];
+                        if (openDropdown.classList.contains('show')) {
+                            openDropdown.classList.remove('show');
+                        }
+                    }
+                }
+            }
+        </script>
+    </head>
+
+    <body>
+        <div class = "topnav">
+            <div class = "logo">
+                <img src="CakesofParadiseBakeryImg/LogoRed.png">
+                <h1>Cakes of Paradise</h1>
+            </div>
+            <nav><div class = "normlinks">
+                <a>about</a>
+                <a>order</a>
+                <a>wedding</a>
+                <a>directions</a>
+                <a>contact</a>
+            </div>
+                <div class="dropdown">
+                    <a class="icon" onclick="dropDown()">&#9776;</a>
+                    <div id="myDropdown" class="dropdown-content">
+                        <a>about</a>
+                        <a>order</a>
+                        <a>wedding</a>
+                        <a>directions</a>
+                        <a>contact</a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+
+        <div class = "main">
+            <div class="content">
+                <div class = "textCont">
+                    <h1 >Experience the<br/> Taste of Paradise</h1>
+                    <button class="pinkbtn">order online</button>
+                </div>
+                <div class = "imgContR">
+                    <div class="lightpinkrect"></div>
+                    <img src="CakesofParadiseBakeryImg/WeddingCake2.png" class="simpleimg1">
+                    <img src="CakesofParadiseBakeryImg/LogoRed.png" class = "logoimg">
+                </div>
+            </div>
+            <div class = "content" style = "background-color: #FFC5AC;">
+                <div class = "imgContL">
+                    <div class="pinkrect" style = "background-color: #FC7C7B;"></div>
+                    <img src="CakesofParadiseBakeryImg/Malasadas.png" class="simpleimg2"> 
+                </div>
+                <div class = "textCont second" 
+                style = "position: absolute; left: 45vw">
+                    <h1>About Us</h1>
+                    <h3>A Seattle-based family business specializing in tropical flavored cakes. Taste the essence of Aloha in every bite.</h3>
+                    <button class="whitebtn">learn more</button>
+                </div>
+            </div>
+
+            <div class="content" style="margin-top: 10vh;">
+                <div class = "textCont">
+                    <h1>Our Menu</h1>
+                    <h3>Come visit us for an assortment of Cakes, Pies, Donuts, and other delicious desserts.</h3>
+                    <button class="pinkbtn">our menu</button>
+                </div>
+                <div class = "imgContR" style=" margin-left: 10%;">
+                    <div class="lightpinkrect"></div>
+                    <div class="colorsquare1"></div>
+                    <div class="colorsquare2"></div>
+                    <img src="CakesofParadiseBakeryImg/WeddingCake.png" class="simpleimg1" >
+                    <img src="CakesofParadiseBakeryImg/MngoCreamCheese.jpg" class="imgsquare1">
+                    <img src="CakesofParadiseBakeryImg/PumpkinCrunch.png" class="imgsquare2">
+
+                </div>
+            </div>
+
+            <div class = "content" style = "background-color: #FFC5AC;">
+                <div class = "imgContL">
+                    <div class="pinkrect" style = "background-color: #FC7C7B;"></div>
+                    <img src="CakesofParadiseBakeryImg/Map.png" class="simpleimg2"> 
+                </div>
+                <div class = "textCont third" 
+                style = "position: absolute; left: 45vw;">
+                    <h1>Hours</h1>
+                    <h4 style="font-style: italic;"> All orders picked-up via our pick up window at our front door!</h4>
+                    <h3 >Wednesday - Saturdays: 10:00 am - 3:00 pm<br/>
+                        Sunday - Tuesdays: CLOSED</h3>
+                    <h4><span class="holiday">Open Thanksgiving Day (11/26/20)<br/>
+                        Open Christmas Eve (12/24/20)<br/>
+                        Open New Years Eve (12/31/20) <br/>
+                        CLOSED Friday, New Years Day (1/1/21)</span></h4>
+                    <h1>Directions</h1>
+                    <h3 >Georgetown<br/>
+                        6322 6th Ave S<br/>
+                        Seattle, WA 98108<br/>
+                        (206) 763-1151</h3>
+                </div>
+            </div>
+        </div>
+        <footer></footer>
+    </body>
+</html>
+
